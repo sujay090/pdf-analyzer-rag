@@ -1,0 +1,30 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch --env-file=.env app.js",
+    "dev:worker": "node --watch --env-file=.env worker.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@langchain/community": "^1.1.25",
+    "@langchain/core": "^1.1.36",
+    "@langchain/google-genai": "^2.1.26",
+    "@langchain/groq": "^1.1.5",
+    "@langchain/qdrant": "^1.0.1",
+    "@langchain/textsplitters": "^1.0.1",
+    "@qdrant/js-client-rest": "^1.17.0",
+    "bullmq": "^5.71.1",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "langchain": "^1.2.37",
+    "multer": "^2.1.1",
+    "pdf-parse": "^1.1.1"
+  }
+}
