@@ -15,7 +15,7 @@ const worker = new Worker('file-upload-queue', async (job) => {
 
     const embeddings = new GoogleGenerativeAIEmbeddings({
         model: "gemini-embedding-001",
-        apiKey: "AIzaSyDyuiwf4KzOIZ1DNdW0u-_wMKHj_BPf16E",
+        apiKey: "your key",
     })
     // fromDocuments auto-creates the collection if it doesn't exist
     await QdrantVectorStore.fromDocuments(docs, embeddings, {
